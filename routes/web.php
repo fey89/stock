@@ -24,6 +24,10 @@ Route::get('foo', 'FooController@index')->name('foo');
 
 Route::post('foo', 'FooController@store');
 
+Route::get('upload', 'UploadController@index')->name('upload');
+
+Route::post('apply/upload', 'UploadController@store');
+
 /*
 Route::get('user/{name?}', function ($name = 'John') {
     return $name;
