@@ -70,6 +70,7 @@
                 <div class="top-right links">
                     @if (Auth::check())
                         <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/foo') }}">Foo</a>
                     @else
                         <a href="{{ url('/login') }}">Login</a>
                         <a href="{{ url('/register') }}">Register</a>
@@ -80,15 +81,6 @@
             <div class="content">
                 <div class="title m-b-md">
                     Laravel
-                    <div class="row">
-                      <div class="col-xs-6 col-md-3">
-                        <a href="#" class="thumbnail">
-                          <img src="..." alt="...">
-                        </a>
-                      </div>
-                      
-                    </div>
-
                 </div>
 
                 <div class="links">

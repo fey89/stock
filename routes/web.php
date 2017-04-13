@@ -20,7 +20,7 @@ Route::get('foo', function () {
     return view('foo');
 });*/
 
-Route::get('foo', 'FooController@index');
+Route::get('foo', 'FooController@index')->name('foo');
 
 Route::post('foo', 'FooController@store');
 
@@ -36,3 +36,6 @@ Route::get('2', function() { return 'Je suis la page 2 !'; });
 Route::get('3', function() { return 'Je suis la page 3 !'; });
 
 */
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
